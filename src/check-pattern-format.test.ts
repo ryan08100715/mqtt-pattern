@@ -1,4 +1,4 @@
-import { checkPatternFormat } from "./mqtt-pattern";
+import { checkPatternFormat } from "./check-pattern-format";
 
 test("長度至少大於等於1", () => {
   // 長度大於1

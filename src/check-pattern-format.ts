@@ -1,6 +1,4 @@
-const SEPARATOR = "/";
-const WILDCARD_SINGLE = "+";
-const WILDCARD_ALL = "#";
+import { TOPIC_SEPARATOR, WILDCARD_SINGLE, WILDCARD_ALL } from "./constant";
 
 /**
  * 檢查 pattern 是否符合格式
@@ -20,7 +18,7 @@ export function checkPatternFormat(pattern: string): boolean {
   // 頭尾禁用 "/"
   if (pattern[0] === "/" || pattern[pattern.length - 1] === "/") return false;
 
-  const segments = pattern.split(SEPARATOR);
+  const segments = pattern.split(TOPIC_SEPARATOR);
 
   for (let i = 0; i < segments.length; i++) {
     const segment = segments[i];

@@ -1,0 +1,5 @@
+const TOPIC_SEPARATOR = "/";
+const WILDCARD_SINGLE = "+";
+const WILDCARD_ALL = "#";
+
+export { TOPIC_SEPARATOR, WILDCARD_SINGLE, WILDCARD_ALL };
