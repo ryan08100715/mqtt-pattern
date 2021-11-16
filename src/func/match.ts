@@ -42,5 +42,5 @@ export function match(pattern: string, topic: string): boolean {
     }
   }
 
-  return true;
+  return patternSegments.length === topicSegments.length;
 }
