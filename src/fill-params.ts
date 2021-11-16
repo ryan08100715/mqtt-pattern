@@ -3,6 +3,7 @@ import { checkPatternFormat } from "./check-pattern-format";
 
 /**
  * 將參數填入 pattern
+ *
  * @param pattern
  * @param params 參數
  */
