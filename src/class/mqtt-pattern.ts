@@ -74,7 +74,7 @@ export class MqttPattern {
   }
 
   /**
-   * 判斷 topic 是否匹配 pattern
+   * 判斷 pattern 是否匹配 topic
    */
   public match(topic: string): boolean {
     const topicSegments = topic.split(MqttPattern.TOPIC_SEPARATOR);
